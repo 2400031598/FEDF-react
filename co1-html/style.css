@@ -1,0 +1,16 @@
+body
+        {
+            background-color: gold;
+            font-size: 20px;
+            display: inline-block;
+        }
+        div 
+        {
+            background-color: silver;
+            font-style: italic;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            color: blue;
+        }

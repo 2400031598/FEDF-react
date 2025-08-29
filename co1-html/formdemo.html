@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Form elements demo</title>
+    <style>
+        *{
+            background-color: turquoise;
+            text-align: center;
+        }
+        .buttons
+        {
+          color: azure;
+        }
+        #b1
+        {
+            background-color: blue;
+        }
+        #b2
+        {
+            background-color: pink;
+        }
+        #b3
+        {
+            background-color: violet;
+        }
+        #b1:hover
+        {
+            cursor: pointer;
+            background-color: black;
+        }
+        nav{
+            background-color: yellow;
+        }
+        nav a{
+            text-decoration: none;
+            display: inline-flex;
+            padding: 10px 10px;
+        }
+        
+    </style>
+    
+</head>
+<body>
+    
+    <h1 style="font-style: italic;">welcome to my portfolio</h1>
+    <nav>
+        <a href="#">Personal information</a>
+        <a href="#">Prefrence</a>
+        <a href="#">Addditional information</a>
+    </nav>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>
+                Personal information
+            </legend>
+              <label>Full Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="=Enter Your Name" required/><br/>
+            <label>Email:</label>
+            <input type="Email" id="Email" name="Email" placeholder="Enter Email @ gmail.com" required/><br/>
+            <label>Password:</label>
+            <input type="Password" id="name" placeholder="Enter Password" required/><br/>
+            <label>DOB:</label>
+            <input type="date" id="dob" name="dob" placeholder="select your dob" required/><br/>
+
+        </fieldset>
+        <fieldset>
+            <legend>Prefrence</legend>
+            <label>Select gender:</label><br/>
+             <label>Male:</label>
+             <input type="radio" id="male" name="gender"/>
+             <label>Female:</label>
+             <input type="radio" id="Female" name="gender"/><br/>
+             <label>Languages:</label><br/>
+             <lable>Telugu:</lable>
+             <input type="checkbox" id="Languages" name="Languages"/><br/>
+             <lable>hindi:</lable>
+             <input type="checkbox" id="Languages" name="Languages"/><br/>
+             <lable>English:</lable>
+             <input type="checkbox" id="Languages" name="Languages"/><br/>
+             <label>Select country</label>
+             <select id="country">
+                <option value=" ">select country</option>
+                <option value="India">India</option>
+                <option value="england">england</option>
+                <option value="USA">USA</option>
+             </select><br/>
+             <lable>About me:</lable>
+             <textarea id="aboutme" name="aboutme" rows="5" placeholder="give introdution" requried></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>Addditional information</legend>
+            <label>upload file:</label>
+            <input type="file" id="file" name="file" accept=".pdf">
+            <div class="buttons">
+                <input type="submit" id="b1" value="Submit">
+                <input type="reset" id="b2" value="Reset">
+                <input type="button" id="b3" value="onclick" onclick="alert(' button was click ')">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

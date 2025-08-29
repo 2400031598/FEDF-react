@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-statement Demo</title>
+</head>
+<body>
+    <h1>Switch-statement Demo in JS</h1>
+    <p id="demo"></p>
+
+    <script>
+        // Ask user for a number (0 = Sunday, 1 = Monday, ... 6 = Saturday)
+        let day = parseInt(prompt("Enter a number (0 for Sunday, 1 for Monday, ... 6 for Saturday):"));
+        let dayName;
+
+        switch(day) {
+            case 0:
+                dayName = "Sunday";
+                break;
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            case 6:
+                dayName = "Saturday";
+                break;
+            default:
+                dayName = "Invalid number! Please enter 0–6.";
+        }
+
+        document.getElementById("demo").innerText = "Day is: " + dayName;
+    </script>
+</body>
+</html>
